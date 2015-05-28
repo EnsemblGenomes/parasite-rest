@@ -84,7 +84,7 @@ cp -v ../eg-rest/ensembl_rest.psgi ../ensembl-rest
 cp -rv ../eg-rest/root/static/* ../ensembl-rest/root/static/
 cp -rv root/static/* ../ensembl-rest/root/static/
 cp -v ./root/favicon.ico ../ensembl-rest/root/favicon.ico
-cp -v ./root/favicon.ico ../ensembl-rest/root/wrapper.tt
+cp -v ./root/root/wrapper.tt ../ensembl-rest/root/wrapper.tt
 
 ## Remove some some endpoints we dont want
 rm -v ../ensembl-rest/root/documentation/vep.conf
