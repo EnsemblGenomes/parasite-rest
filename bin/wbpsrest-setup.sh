@@ -102,6 +102,7 @@ rm -v ../ensembl-rest/root/documentation/lookup.conf
 rm -v ../ensembl-rest/root/documentation/map.conf
 rm -v ../ensembl-rest/root/documentation/sequence.conf
 rm -v ../ensembl-rest/root/documentation/xrefs.conf
+rm -v ../ensembl-rest/root/documentation/archive.conf
 rm -v ../eg-rest/root/documentation/variation.conf
 rm -v ../eg-rest/root/documentation/vep.conf
 rm -v ../eg-rest/root/documentation/compara.conf
