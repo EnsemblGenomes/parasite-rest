@@ -20,9 +20,10 @@ limitations under the License.
 
 <html lang="en">
 <head>
-        <script src="/static/js/20-prettify.js"></script>
-        <script src="/static/js/30-jquery-1.11.1.min.js"></script>
-	<script src="/static/js/highlight/highlight.pack.js"></script>
+  <base href="/api/" />
+  <script src="static/js/20-prettify.js"></script>
+  <script src="static/js/30-jquery-1.11.1.min.js"></script>
+	<script src="static/js/highlight/highlight.pack.js"></script>
 
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -30,11 +31,11 @@ limitations under the License.
 	[% IF c.request.env.$psg %]
 	<link href='[% c.request.env.$psg.0 %]' rel='stylesheet'/>
 	[% ELSE %]
-	<link href="/static/css/10-bootstrap.css" rel="stylesheet"/>
-	<link href="/static/css/20-prettify.css" rel="stylesheet"/>
-       	<link href="/static/css/25-default.css" rel="stylesheet"/>
-	<link href="/static/css/50-additional.css" rel="stylesheet"/>
-	<link href="/static/css/51-docs.css" rel="stylesheet"/>
+	<link href="static/css/10-bootstrap.css" rel="stylesheet"/>
+	<link href="static/css/20-prettify.css" rel="stylesheet"/>
+ 	<link href="static/css/25-default.css" rel="stylesheet"/>
+	<link href="static/css/50-additional.css" rel="stylesheet"/>
+	<link href="static/css/51-docs.css" rel="stylesheet"/>
 	[% END %]
 	<style>
     body {
@@ -54,11 +55,11 @@ limitations under the License.
             <div class="container">
                 <a class="brand" href="[% service_parent_url %]"><img class="brand" src="[% service_logo %]" alt="Service logo"/></a>
                     <ul class="nav">
-                        <li class="active"><a href="/">Endpoints</a></li>
+                        <li class="active"><a href="/api/">Endpoints</a></li>
                         <li><a href="http://github.com/Ensembl/ensembl-rest/wiki">User Guide</a></li>
                         <li><a href="http://github.com/Ensembl/ensembl-rest/wiki/Change-log">Change Log</a></li>
-                        <li><a href="http://parasite.wormbase.org/info/about/contact/">Contact</a></li>
-                        <li><a href="http://parasite.wormbase.org">Back to WormBase ParaSite</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/">Back to WormBase ParaSite</a></li>
                     </ul>
             </div><!-- container-->
         </div><!-- navbar-inner-->
@@ -81,7 +82,7 @@ limitations under the License.
 [% IF c.request.env.$psg %]
 <script src='[% c.request.env.$psg.1 %]'></script>
 [% ELSE %]
-<script src="/static/js/10-bootstrap.js"></script>
+<script src="static/js/10-bootstrap.js"></script>
 
 [% END %]
 
