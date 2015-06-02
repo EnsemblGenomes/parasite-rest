@@ -122,7 +122,8 @@ limitations under the License.
 	[% NEXT IF p.value.disable %]
 
 	[% filtered_uri = p.value.example.uri.replace('\+', '%2B') %]
-  [% filtered_uri = p.value.example.uri.replace('^/', '') %]
+  [% filtered_uri = filtered_uri.replace('^/', '') %]
+  [% p.value.uri  = p.value.uri.replace('^/', '/api/') %]
 
 	<h3><a href="[% filtered_uri %]">/api/[% filtered_uri %]</a></h3>
 	<br>
@@ -144,7 +145,7 @@ limitations under the License.
       url : "[% filtered_uri %]",
       type : method,
      beforeSend : function () {
-        $("#example[% p.value.id %]").append("<img src='/static/img/e-loader.gif'>");
+        $("#example[% p.value.id %]").append("<img src='static/img/e-loader.gif'>");
         return true;
      },
       success : function (resp) {
