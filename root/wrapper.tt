@@ -36,6 +36,7 @@ limitations under the License.
  	<link href="static/css/25-default.css" rel="stylesheet"/>
 	<link href="static/css/50-additional.css" rel="stylesheet"/>
 	<link href="static/css/51-docs.css" rel="stylesheet"/>
+        <link href="favicon.ico" rel="icon" />
 	[% END %]
 	<style>
     body {
