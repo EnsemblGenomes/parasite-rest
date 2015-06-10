@@ -57,8 +57,6 @@ limitations under the License.
                 <a class="brand" href="[% service_parent_url %]"><img class="brand" src="[% service_logo %]" alt="Service logo"/></a>
                     <ul class="nav">
                         <li class="active"><a href="/api/">Endpoints</a></li>
-                        <li><a href="http://github.com/Ensembl/ensembl-rest/wiki">User Guide</a></li>
-                        <li><a href="http://github.com/Ensembl/ensembl-rest/wiki/Change-log">Change Log</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                         <li><a href="/">Back to WormBase ParaSite</a></li>
                     </ul>
