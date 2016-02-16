@@ -320,3 +320,16 @@ wb_release_1=243
     global = 1
   </backend>
 </Plugin::Cache>
+
+# add WBPS static root and give it priority
+<Plugin::Static::Simple>
+  include_path = __path_to(root)__/../../parasite-rest/root
+  include_path = __path_to(root)__
+</Plugin::Static::Simple>
+
+# add WBPS HTML template root and give it priority
+<View::HTML>
+  INCLUDE_PATH = __path_to(root)__/../../parasite-rest/root
+  INCLUDE_PATH = __path_to(root)__
+</View::HTML>
+

@@ -79,14 +79,8 @@ mkdir logs
 cd parasite-rest
 
 ## ParaSite Configuration
-cp -v ensembl_rest.conf ../ensembl-rest
 cp -v ../eg-rest/ensembl_rest.psgi ../ensembl-rest
 cp -rv ../eg-rest/root/static/* ../ensembl-rest/root/static/
-cp -rv root/static/* ../ensembl-rest/root/static/
-cp -v ./root/favicon.ico ../ensembl-rest/root/favicon.ico
-cp -v ./root/wrapper.tt ../ensembl-rest/root/wrapper.tt
-cp -v ./root/documentation/index.tt ../ensembl-rest/root/documentation/index.tt
-cp -v ./root/documentation/info.tt ../ensembl-rest/root/documentation/info.tt
 
 ## Remove some some endpoints we dont want
 rm -v ../ensembl-rest/root/documentation/vep.conf
@@ -106,6 +100,7 @@ rm -v ../ensembl-rest/root/documentation/sequence.conf
 rm -v ../ensembl-rest/root/documentation/xrefs.conf
 rm -v ../ensembl-rest/root/documentation/archive.conf
 rm -v ../ensembl-rest/root/documentation/ld.conf
+rm -v ../ensembl-rest/root/documentation/transcripthaplotypes.conf
 rm -v ../eg-rest/root/documentation/variation.conf
 rm -v ../eg-rest/root/documentation/vep.conf
 rm -v ../eg-rest/root/documentation/compara.conf
