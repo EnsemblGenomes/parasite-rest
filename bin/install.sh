@@ -107,4 +107,6 @@ rm -v ../eg-rest/root/documentation/compara.conf
 rm -v ../eg-rest/root/documentation/info.conf
 rm -v ../eg-rest/root/documentation/overlap.conf
 
+## Compile the variation code
+(cd ensembl-variation/C_code && make)
 
