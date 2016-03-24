@@ -122,14 +122,14 @@ wb_release_1=243
     transcript_symbol_db=GO
 
     accession=
-    assembly_id=GCA_000002995.2
+    assembly_id=GCA_000951595.1
 
-    sequence_region_name=Bmal_v3_scaffold139
-    sequence_region=Bmal_v3_scaffold139:57600..85000:1
-    sequence_region_negative=Bmal_v3_scaffold139:57600..85000:-1
-    sequence_region_strandless=Bmal_v3_scaffold139:57600..85000
+    sequence_region_name=Bm_v4_Chr2_contig_001
+    sequence_region=Bm_v4_Chr2_contig_001:13847151-13862157:1
+    sequence_region_negative=Bm_v4_Chr2_contig_001:13847151-13862157:-1
+    sequence_region_strandless=Bm_v4_Chr2_contig_001:13847151-13862157
 
-    overlap_region=Bmal_v3_scaffold139:57600-85000
+    overlap_region=Bm_v4_Chr2_contig_001:13847151-13862157
 
     species=brugia_malayi_prjna10729
     species_common=brugia_malayi_prjna10729
