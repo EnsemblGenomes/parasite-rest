@@ -123,7 +123,6 @@ limitations under the License.
 
 	[% filtered_uri = p.value.example.uri.replace('\+', '%2B') %]
   [% filtered_uri = filtered_uri.replace('^/', '') %]
-  [% p.value.uri  = p.value.uri.replace('^/', '/rest-6/') %]
 
 	<h3><a href="[% filtered_uri %]">/rest/[% filtered_uri %]</a></h3>
 	<br>
