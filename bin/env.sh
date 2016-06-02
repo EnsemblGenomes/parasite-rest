@@ -1,4 +1,5 @@
-ROOT='/nfs/public/rw/ensembl/websites/parasite/current/restapi'
+#ROOT='/nfs/public/rw/ensembl/websites/parasite/current/restapi'
+ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../.."
 PORT=8034
 export ENSEMBL_REST_ROOT=$ROOT
 export ENSEMBL_REST_PORT=$PORT
