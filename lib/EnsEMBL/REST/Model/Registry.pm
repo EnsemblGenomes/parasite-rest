@@ -408,7 +408,7 @@ sub get_compara_name_for_species {
       $division =~ s/^Ensembl//;
       $compara_group = lc($division);
     }
-    $compara_group = 'wbparasite' if $division eq 'parasite';
+    $compara_group = 'parasite' if $division eq 'parasite';
     $self->compara_cache()->{$species} = $compara_group;
   }
   

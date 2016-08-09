@@ -96,7 +96,7 @@ sub find_compara_methods {
   my ($self, $class) = @_;
   my $c = $self->context();
   #default is "multi"
-  my $compara = $c->request->parameters->{compara} || 'wbparasite';
+  my $compara = $c->request->parameters->{compara} || 'parasite';
   my $reg = $c->model('Registry');
   my $compara_dba = $reg->get_DBAdaptor($compara, "compara");
   my $methods;
@@ -115,7 +115,7 @@ sub find_compara_species_sets {
 
   my $c = $self->context();
   #default is "multi"
-  my $compara = $c->request->parameters->{compara} || 'wbparasite';
+  my $compara = $c->request->parameters->{compara} || 'parasite';
   my $reg = $c->model('Registry');
   my $compara_dba = $reg->get_DBAdaptor($compara, "compara");
 

@@ -140,7 +140,7 @@ wb_release_1=243
     target_taxon=6279
     target_species=wuchereria_bancrofti_prjeb536
 
-    compara=wbparasite
+    compara=parasite
 
     genetree_stable_id=WBGT00000000021203
 
@@ -207,7 +207,7 @@ wb_release_1=243
     ontology_term_id=GO:0005667
     ontology_term_name=transcription factor complex
     
-    compara=wbparasite
+    compara=parasite
     compara_method=EPO
     compara_method_type=GenomicAlign
     
@@ -234,7 +234,7 @@ wb_release_1=243
 
 <Controller::Compara>
   # Sets the default compara to use when finding the best compara fails. Defaults to multi
-  default_compara=wbparasite
+  default_compara=parasite
 </Controller::Compara>
   
 <Controller::Archive>
@@ -247,7 +247,7 @@ wb_release_1=243
 
 <Controller::Taxonomy>
   # specify the registry alias for the database containing ncbi_taxa_node tables (normally a compara schema)
-  taxonomy = wbparasite
+  taxonomy = parasite
 </Controller::Taxonomy>
 
 <Controller::Ontology>
@@ -270,7 +270,7 @@ wb_release_1=243
 
 <Controller::Homology>
   # Sets the default compara to use when finding the best compara fails. Defaults to multi
-  default_compara=wbparasite
+  default_compara=parasite
 </Controller::Homology>
 
 <!--Controller::Regulatory>
@@ -280,7 +280,7 @@ wb_release_1=243
 
 <Controller::GenomicAlignment>
   # Sets the default compara to use when finding the best compara fails. Defaults to multi
-  default_compara=wbparasite
+  default_compara=parasite
 </Controller::GenomicAlignment>
 
 <Controller::VEP>
