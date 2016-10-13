@@ -13,9 +13,12 @@ copyright_footer = <a href="http://www.ebi.ac.uk">EBI</a> &amp; <a href="http://
 jsonp=1
 
 # Specify the WormBase ParaSite release number here 
-service_version = 5
+service_version = 8
 
 # Lookup for corresponding WormBase release
+wb_release_8=256
+wb_release_7=254
+wb_release_6=252
 wb_release_5=251
 wb_release_4=250
 wb_release_3=245
