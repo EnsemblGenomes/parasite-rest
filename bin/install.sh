@@ -83,12 +83,15 @@ cp -v ../eg-rest/ensembl_rest.psgi ../ensembl-rest
 cp -rv ../eg-rest/root/static/* ../ensembl-rest/root/static/
 
 ## Remove some some endpoints we dont want
+rm -rv ../ensembl-rest/lib/EnsEMBL/REST/Controller/ga4gh
+rm -rv ../ensembl-rest/lib/EnsEMBL/REST/Model/ga4gh
 rm -v ../ensembl-rest/root/documentation/vep.conf
 rm -v ../ensembl-rest/root/documentation/compara.conf
 rm -v ../ensembl-rest/root/documentation/overlap.conf
 rm -v ../ensembl-rest/root/documentation/regulatory.conf
 rm -v ../ensembl-rest/root/documentation/taxonomy.conf
 rm -v ../ensembl-rest/root/documentation/variation.conf
+rm -v ../ensembl-rest/root/documentation/gafeatures.conf
 rm -v ../ensembl-rest/root/documentation/gavariant.conf
 rm -v ../ensembl-rest/root/documentation/gavariantset.conf
 rm -v ../ensembl-rest/root/documentation/gacallset.conf
