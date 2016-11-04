@@ -142,6 +142,7 @@ wb_release_1=243
     taxon_nameish=%25malayi
     target_taxon=6279
     target_species=wuchereria_bancrofti_prjeb536
+    target_ancestral_taxon=6231
 
     compara=parasite
 
