@@ -114,13 +114,13 @@ wb_release_1=243
 
  <replacements>
     genome_name=brugia_malayi_prjna10729
-    gene_stable_id=WBGene00225050
+    gene_stable_id=WBGene00221255
     transcript_stable_id=Bm4789
-    exon_stable_id=WBGene00225050
+    exon_stable_id=WBGene00221255
     translation_stable_id=Bm4789
     translation_species=Brugia_malayi
 
-    gene_symbol=Bma-unc-1
+    gene_symbol=Bm994
     gene_symbol_db=EntrezGene
     transcript_symbol_db=GO
 
