@@ -104,6 +104,7 @@ rm -v ../ensembl-rest/root/documentation/xrefs.conf
 rm -v ../ensembl-rest/root/documentation/archive.conf
 rm -v ../ensembl-rest/root/documentation/ld.conf
 rm -v ../ensembl-rest/root/documentation/transcripthaplotypes.conf
+rm -v ../ensembl-rest/root/documentation/phenotypefeatures.conf
 rm -v ../eg-rest/root/documentation/variation.conf
 rm -v ../eg-rest/root/documentation/vep.conf
 rm -v ../eg-rest/root/documentation/compara.conf
