@@ -25,7 +25,7 @@ ext = "[% p.value.uri %]"
 headers={ "Content-Type" : "[% p.value.content %]", "Accept" : "[% p.value.accept %]"}
 r = requests.post(server+ext, headers=headers, data='[% p.value.body %]')
 [% ELSE %]
-r = requests.get(server+ext, headers={ "Content-Type" : "[% p.value.content %]"})
+r = requests.get(server+ext, headers={ "Content-Type" : "[% p.value.content %]", "Accept" : "[% p.value.accept %]"})
 [% END -%]
 
 if not r.ok:
