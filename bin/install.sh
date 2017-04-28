@@ -85,6 +85,7 @@ cp -rv ../eg-rest/root/static/* ../ensembl-rest/root/static/
 ## Remove some some endpoints we dont want
 rm -rv ../ensembl-rest/lib/EnsEMBL/REST/Controller/ga4gh
 rm -rv ../ensembl-rest/lib/EnsEMBL/REST/Model/ga4gh
+rm -v ../ensembl-rest/root/documentation/examples/*
 rm -v ../ensembl-rest/root/documentation/vep.conf
 rm -v ../ensembl-rest/root/documentation/compara.conf
 rm -v ../ensembl-rest/root/documentation/overlap.conf
