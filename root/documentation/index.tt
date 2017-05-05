@@ -16,6 +16,10 @@ limitations under the License.
 
 
 <h1 id="title">[% template_title %]</h1>
+
+<h4>Versioning</h4>
+<p>This is version [% service_version %] of the REST API.  We maintain both the current and one previous release of the REST service.  Versioning is handled by the URL, e.g. /rest-[% service_version %] will direct to release [% service_version %] of the website.  To always retrieve the latest data, simply remove the release number from the URL, i.e. /rest.</p>
+
 <table class="table table-striped">
 [% FOREACH pair IN groups.pairs %]
 <thead>
