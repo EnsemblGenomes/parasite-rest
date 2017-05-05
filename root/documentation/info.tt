@@ -124,7 +124,7 @@ limitations under the License.
 	[% filtered_uri = p.value.example.uri.replace('\+', '%2B') %]
   [% filtered_uri = filtered_uri.replace('^/', '') %]
 
-	<h3><a href="[% filtered_uri %]">/rest/[% filtered_uri %]</a></h3>
+	<h3><a href="[% filtered_uri %]">/rest-[% service_version %]/[% filtered_uri %]</a></h3>
 	<br>
 	<ul class="nav nav-pills">
 	  <li class="active"><a href="#example[% p.value.id %]" data-toggle="tab">Example output</a></li>
