@@ -42,6 +42,25 @@ sub version_GET :Args(0) {
   return;
 }
 
+sub quality_name : Chained('/') PathPart('info/quality') : ActionClass('REST') :Args(1) { }
+
+sub quality_name_GET :Args(1) {
+  my ($self, $c, $name) = @_;
+  my $registry = $c->model('Registry')->_registry();
+  my $meta_container = $registry->get_adaptor($name, 'Core', 'MetaContainer');
+  my $scores = {
+    'busco_complete' => $meta_container->single_value_by_key('assembly.busco_complete'),
+    'busco_duplicated' => $meta_container->single_value_by_key('assembly.busco_duplicated'),
+    'busco_fragmented' => $meta_container->single_value_by_key('assembly.busco_fragmented'),
+    'busco_missing' => $meta_container->single_value_by_key('assembly.busco_missing'),
+    'busco_number' => $meta_container->single_value_by_key('assembly.busco_number'),
+    'cegma_complete' => $meta_container->single_value_by_key('assembly.cegma_complete'),
+    'cegma_partial' => $meta_container->single_value_by_key('assembly.cegma_partial'),
+  };
+  $self->status_ok($c, entity => $scores);
+  return;
+}
+
 __PACKAGE__->meta->make_immutable;
 
 1;
