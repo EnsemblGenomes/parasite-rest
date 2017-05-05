@@ -29,7 +29,7 @@ limitations under the License.
 </thead>
     <tbody>
 	[% FOREACH key IN pair.value.sort %]
-      <tr><td><a href="documentation/info/[% key %]">[% endpoints.$key.method %] /rest/[% endpoints.$key.endpoint %] </a> </td><td> [% endpoints.$key.description %]</td></tr>
+      <tr><td><a href="documentation/info/[% key %]">[% endpoints.$key.method %] /rest-[% service_version %]/[% endpoints.$key.endpoint %] </a> </td><td> [% endpoints.$key.description %]</td></tr>
 	[% END %]
     </tbody>
 [% END %]
