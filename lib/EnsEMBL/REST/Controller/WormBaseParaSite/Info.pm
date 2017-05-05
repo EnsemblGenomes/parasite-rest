@@ -49,13 +49,17 @@ sub quality_name_GET :Args(1) {
   my $registry = $c->model('Registry')->_registry();
   my $meta_container = $registry->get_adaptor($name, 'Core', 'MetaContainer');
   my $scores = {
-    'busco_complete' => $meta_container->single_value_by_key('assembly.busco_complete'),
-    'busco_duplicated' => $meta_container->single_value_by_key('assembly.busco_duplicated'),
-    'busco_fragmented' => $meta_container->single_value_by_key('assembly.busco_fragmented'),
-    'busco_missing' => $meta_container->single_value_by_key('assembly.busco_missing'),
-    'busco_number' => $meta_container->single_value_by_key('assembly.busco_number'),
-    'cegma_complete' => $meta_container->single_value_by_key('assembly.cegma_complete'),
-    'cegma_partial' => $meta_container->single_value_by_key('assembly.cegma_partial'),
+    'busco' => {
+      'complete' => $meta_container->single_value_by_key('assembly.busco_complete'),
+      'duplicated' => $meta_container->single_value_by_key('assembly.busco_duplicated'),
+      'fragmented' => $meta_container->single_value_by_key('assembly.busco_fragmented'),
+      'missing' => $meta_container->single_value_by_key('assembly.busco_missing'),
+      'number' => $meta_container->single_value_by_key('assembly.busco_number'),
+    },
+    'cegma' => {
+      'complete' => $meta_container->single_value_by_key('assembly.cegma_complete'),
+      'partial' => $meta_container->single_value_by_key('assembly.cegma_partial'),
+    },
   };
   $self->status_ok($c, entity => $scores);
   return;
