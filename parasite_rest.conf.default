@@ -13,9 +13,10 @@ copyright_footer = <a href="http://www.ebi.ac.uk">EBI</a> &amp; <a href="http://
 jsonp=1
 
 # Specify the WormBase ParaSite release number here 
-service_version = 9
+service_version = 10
 
 # Lookup for corresponding WormBase release
+wb_release_10=260
 wb_release_9=258
 wb_release_8=256
 wb_release_7=254
@@ -29,15 +30,15 @@ wb_release_1=243
 <Model::Registry>
   ###### Database settings. Use if you want to connect to a single database instance. Common options are given below
   
-  host = mysql-ps-staging-1.ebi.ac.uk
-  port = 4451
+  host = mysql-ps-staging-2.ebi.ac.uk
+  port = 4467
   user = ensro
 
-  lookup_host = mysql-ps-staging-1.ebi.ac.uk
-  lookup_port = 4451
+  lookup_host = mysql-ps-staging-2.ebi.ac.uk
+  lookup_port = 4467
   lookup_user = ensro
 
-  lookup_dbname = ensemblgenomes_info_35
+  lookup_dbname = ensemblgenomes_info_36
 
   # host = useastdb.ensembl.org
   # port = 5306
@@ -51,7 +52,7 @@ wb_release_1=243
   # port = 4157
   # user = anonymous
  
-  version = 88
+  version = 89
   #verbose = 1
   
   ###### Registry file settings
