@@ -122,9 +122,11 @@ limitations under the License.
 	[% NEXT IF p.value.disable %]
 
 	[% filtered_uri = p.value.example.uri.replace('\+', '%2B') %]
-  [% filtered_uri = filtered_uri.replace('^/', '') %]
-
-	<h3><a href="[% filtered_uri %]">/rest-[% service_version %]/[% filtered_uri %]</a></h3>
+        [% filtered_uri = filtered_uri.replace('^/', '') %]
+        [% rest_api_path = '/rest-' _ service_version %]
+        [% p.value.uri  = rest_api_path _ p.value.uri.replace(rest_api_path, '') %]
+ 
+        <h3><a href="[% filtered_uri %]">[% rest_api_path %]/[% filtered_uri %]</a></h3>
 	<br>
 	<ul class="nav nav-pills">
 	  <li class="active"><a href="#example[% p.value.id %]" data-toggle="tab">Example output</a></li>
