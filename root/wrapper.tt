@@ -59,6 +59,7 @@ limitations under the License.
                         <li class="active"><a href="/rest-[% service_version %]/">Endpoints</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                         <li><a href="/">Back to WormBase ParaSite</a></li>
+			<li><a target="_blank" href="https://www.ebi.ac.uk/data-protection/privacy-notice/wbparasite-website-browsing">Privacy Notice</a></li>
                     </ul>
             </div><!-- container-->
         </div><!-- navbar-inner-->
