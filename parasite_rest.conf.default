@@ -13,9 +13,11 @@ copyright_footer = <a href="http://www.ebi.ac.uk">EBI</a> &amp; <a href="http://
 jsonp=1
 
 # Specify the WormBase ParaSite release number here 
-service_version = 10
+service_version = 12
 
 # Lookup for corresponding WormBase release
+wb_release_12=267
+wb_release_11=265
 wb_release_10=260
 wb_release_9=258
 wb_release_8=256
@@ -38,7 +40,7 @@ wb_release_1=243
   lookup_port = 4467
   lookup_user = ensro
 
-  lookup_dbname = ensemblgenomes_info_36
+  lookup_dbname = ensemblgenomes_info_41
 
   # host = useastdb.ensembl.org
   # port = 5306
@@ -52,7 +54,7 @@ wb_release_1=243
   # port = 4157
   # user = anonymous
  
-  version = 89
+  version = 94
   #verbose = 1
   
   ###### Registry file settings
@@ -117,9 +119,10 @@ wb_release_1=243
  <replacements>
     genome_name=brugia_malayi_prjna10729
     gene_stable_id=WBGene00221255
-    transcript_stable_id=Bm4789
+    gene_stable_id_2=ASIM_0001005001
+    transcript_stable_id=Bm4789.1
     exon_stable_id=WBGene00221255
-    translation_stable_id=Bm4789
+    translation_stable_id=Bm4789.1
     translation_species=Brugia_malayi
 
     gene_symbol=Bm994
