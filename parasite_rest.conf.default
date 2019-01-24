@@ -162,7 +162,7 @@ wb_release_1=243
     cds_coordinates=1..300
     translation_coordinates=1..100
 
-    division_name=parasite
+    division_name=EnsemblParasite
 
     ontology=GO
     ontology_term_id=GO:0005667
