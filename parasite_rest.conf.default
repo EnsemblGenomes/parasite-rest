@@ -13,9 +13,10 @@ copyright_footer = <a href="http://www.ebi.ac.uk">EBI</a> &amp; <a href="http://
 jsonp=1
 
 # Specify the WormBase ParaSite release number here 
-service_version = 12
+service_version = 13
 
 # Lookup for corresponding WormBase release
+wb_release_13=269
 wb_release_12=267
 wb_release_11=265
 wb_release_10=260
@@ -32,15 +33,15 @@ wb_release_1=243
 <Model::Registry>
   ###### Database settings. Use if you want to connect to a single database instance. Common options are given below
   
-  host = mysql-ps-staging-2.ebi.ac.uk
-  port = 4467
+  host = mysql-ps-staging-1.ebi.ac.uk
+  port = 4451
   user = ensro
 
-  lookup_host = mysql-ps-staging-2.ebi.ac.uk
-  lookup_port = 4467
+  lookup_host = mysql-ps-staging-1.ebi.ac.uk
+  lookup_port = 4451
   lookup_user = ensro
 
-  lookup_dbname = ensemblgenomes_info_41
+  lookup_dbname = ensemblgenomes_info_42
 
   # host = useastdb.ensembl.org
   # port = 5306
@@ -54,7 +55,7 @@ wb_release_1=243
   # port = 4157
   # user = anonymous
  
-  version = 94
+  version = 95
   #verbose = 1
   
   ###### Registry file settings
@@ -130,7 +131,7 @@ wb_release_1=243
     transcript_symbol_db=GO
 
     accession=
-    assembly_id=GCA_000951595.1
+    assembly_id=GCA_000950995.1
 
     sequence_region_name=Bm_v4_Chr2_contig_001
     sequence_region=Bm_v4_Chr2_contig_001:13847151-13862157:1
@@ -151,7 +152,7 @@ wb_release_1=243
 
     compara=parasite
 
-    genetree_stable_id=WBGT00000000021203
+    genetree_stable_id=WBGT00000000021204
 
     asm_species=Saccharomyces_cerevisiae
     asm_sequence_region=VII:786054-786920:1
