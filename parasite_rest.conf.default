@@ -177,7 +177,7 @@ wb_release_1=243
 
     contig_coord_system=contig
     contig_sequence_region=Bmal_v3_scaffold139:57600..85000
-
+    biotype=ncRNA
   </replacements>
 
   <ensembl_replacements>
@@ -239,7 +239,7 @@ wb_release_1=243
     genomic_alignment_group=sauropsids
 
     info_division=ensembl
-  </replacements>
+  </ensembl_replacements>
 </Model::Documentation>
 
 <Controller::Compara>
