@@ -101,8 +101,7 @@ wb_release_1=243
 
 <Model::Documentation>
   #Must be an array reference; if you specify only 1 then surround with [] brackets; if you specify more then remove them
-  paths=root/documentation
-  paths=../parasite-rest/root/documentation
+  paths=[../parasite-rest/root/documentation]
 
   #How long examples stay in the backend caches before being expired; default is 1hr in seconds. 
 
