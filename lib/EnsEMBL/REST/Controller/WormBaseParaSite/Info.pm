@@ -65,6 +65,34 @@ sub quality_name_GET :Args(1) {
   return;
 }
 
+
+# Enable /info/genomes endpoint for Parasite
+sub genomes_all : Chained('/') PathPart('info/genomes') :
+  ActionClass('REST') : Args(0) { }
+
+sub genomes_all_GET {
+  my ( $self, $c ) = @_;
+  # lazy load the registry
+  $c->model('Registry')->_registry();
+  my $gidba = $c->model('Registry')->get_genomeinfo_adaptor();
+  my $expand = $c->request->param('expand');
+  my $sql = q/select genome_id as dbID, display_name, taxonomy_id, species_taxonomy_id, genebuild, 
+             has_pan_compara, has_variations, has_peptide_compara, 
+             has_genome_alignments, has_synteny, has_other_alignments, 
+             assembly_accession, assembly_level, assembly_name, base_count, dbname
+             from genome 
+             join organism using (organism_id)
+             join assembly using (assembly_id)
+             join genome_database using (genome_id)/;
+
+  my @infos = map { $_->to_hash($expand) } @{ $gidba->_fetch_generic( $sql, undef, $gidba->_get_obj_class(), undef ) };
+
+  $self->status_ok( $c, entity => \@infos );
+  return;
+}
+
+
+
 __PACKAGE__->meta->make_immutable;
 
 1;
