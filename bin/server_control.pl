@@ -7,7 +7,7 @@ use FindBin qw($Bin);
 
 my $root_dir   = $ENV{ENSEMBL_REST_ROOT} || "$Bin/../../";
 my $psgi_file  = "$root_dir/ensembl-rest/ensembl_rest.psgi";
-my $starman    = $ENV{ENSEMBL_REST_STARMAN} || '/nfs/public/rw/ensembl/perlbrew/perls/perl-5.16.3/bin/starman';
+my $starman    = $ENV{ENSEMBL_REST_STARMAN} || '/home/linuxbrew/.linuxbrew/Cellar/perl/5.28.0/bin/starman';
 my $port       = $ENV{ENSEMBL_REST_PORT} || 8034;
 my $workers    = 5;
 my $max_requests = 100000;
@@ -28,7 +28,8 @@ Daemon::Control->new(
       '--workers',    $workers, 
       '--max-requests', $max_requests,
       '--access-log', $access_log, 
-      '--error-log',  $error_log, 
+      '--error-log',  $error_log,
+      '--path', '/release-13', 
       $psgi_file 
     ],
     pid_file     => $pid_file,
