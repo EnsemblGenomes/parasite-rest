@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#!/usr/bin/env perl
 
 use strict;
 use warnings;
@@ -29,7 +29,7 @@ Daemon::Control->new(
       '--max-requests', $max_requests,
       '--access-log', $access_log, 
       '--error-log',  $error_log,
-      '--path', '/release-13', 
+      '--path', '/rest-13', 
       $psgi_file 
     ],
     pid_file     => $pid_file,
