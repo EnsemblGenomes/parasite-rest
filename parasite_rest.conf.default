@@ -7,15 +7,17 @@ default_view = HTML
 
 service_name = WormBase ParaSite REST API
 service_logo = static/img/parasite.png
-service_parent_url = http://parasite.wormbase.org
-copyright_footer = <a href="http://www.ebi.ac.uk">EBI</a> &amp; <a href="http://www.sanger.ac.uk">WTSI</a>
+service_parent_url = https://parasite.wormbase.org
+copyright_footer = <a href="https://www.ebi.ac.uk">EBI</a> &amp; <a href="https://www.sanger.ac.uk">WTSI</a>
 
 jsonp=1
 
 # Specify the WormBase ParaSite release number here 
-service_version = 14
+service_version = 16
 
 # Lookup for corresponding WormBase release
+wb_release_16=279
+wb_release_15=276
 wb_release_14=271
 wb_release_13=269
 wb_release_12=267
@@ -50,7 +52,7 @@ wb_release_1=243
   # port = 4157
   # user = anonymous
  
-  version = 97
+  version = 101
   #verbose = 1
   
   ###### Registry file settings
@@ -96,7 +98,8 @@ wb_release_1=243
 <Model::Lookup>
   # Model to use for ID lookups. Currently defaults to the DatabaseIDLookup which can be stable_ids schema
   # or a simple DBAdaptor loop lookup
-  # lookup_model = DatabaseIDLookup
+  lookup_model = DatabaseIDLookup
+  no_long_lookup = 1
 </Model::Lookup>
 
 <Model::Documentation>
@@ -140,7 +143,7 @@ wb_release_1=243
     taxon_name=Brugia
     taxon_nameish=%25malayi
     target_taxon=6279
-    target_species=wuchereria_bancrofti_prjeb536
+    target_species=brugia_pahangi_prjeb497
     target_ancestral_taxon=6231
 
     compara=parasite
@@ -323,6 +326,18 @@ wb_release_1=243
     global = 1
   </backend>
 </Plugin::Cache>
+
+<Model::Compara>
+  species_set_group = mammals
+  method            = EPO
+  no_branch_lengths = 0
+  compact           = 1
+  aligned           = 1
+  cigar_line        = 1
+  format            = full
+  sequence          = protein
+  type              = all
+</Model::Compara>
 
 # add WBPS static root and give it priority
 <Plugin::Static::Simple>
