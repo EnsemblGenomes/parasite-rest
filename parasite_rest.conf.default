@@ -13,9 +13,11 @@ copyright_footer = <a href="https://www.ebi.ac.uk">EBI</a> &amp; <a href="https:
 jsonp=1
 
 # Specify the WormBase ParaSite release number here 
-service_version = 16
+service_version = 18
 
 # Lookup for corresponding WormBase release
+wb_release_18=285
+wb_release_17=282
 wb_release_16=279
 wb_release_15=276
 wb_release_14=271
@@ -52,7 +54,7 @@ wb_release_1=243
   # port = 4157
   # user = anonymous
  
-  version = 101
+  version = 108
   #verbose = 1
   
   ###### Registry file settings
